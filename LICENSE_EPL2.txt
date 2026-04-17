@@ -1,0 +1,10 @@
+Eclipse Public License - v 2.0
+
+This application includes Eclipse Mosquitto, which is licensed under
+the Eclipse Public License 2.0.
+
+The full text of the license is available at:
+https://www.eclipse.org/legal/epl-2.0/
+
+Source code for the Mosquitto component is available at:
+https://github.com/eclipse/mosquitto
