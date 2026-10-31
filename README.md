@@ -1,35 +1,26 @@
-# CC Mosquitto
+# CC MQTT Broker
 
-Standalone MQTT broker with a graphical user interface, built on Eclipse Mosquitto.
+CC MQTT Broker (formerly CC Mosquitto) is ChromaChecker's desktop MQTT
+broker for macOS and Windows. It runs Eclipse Mosquitto behind a graphical
+user interface. It is designed as a companion to ChromaChecker Capture's
+IoT integrations (RHT sensors, Signal Tower) and also works as a
+general-purpose MQTT broker.
 
-Designed as a companion tool for ChromaChecker Capture's IoT integrations
-(RHT sensors, Signal Tower), but works as a general-purpose MQTT broker.
+## Eclipse Mosquitto (EPL-2.0)
 
-## Features
+CC MQTT Broker includes Eclipse Mosquitto 2.1.2, licensed under the
+Eclipse Public License 2.0:
 
-- Simple GUI for starting/stopping the broker
-- System tray integration (runs in background)
-- Username/password authentication
-- Auto-start on system boot (macOS LaunchAgent, Windows Registry)
-- Live connection log with colour-coded output
-- Persistence for retained messages
+- macOS: the Homebrew build of Mosquitto
+- Windows: the binaries from the official Eclipse Mosquitto installer,
+  re-signed by ChromaChecker Corporation
 
-## Requirements
-
-- Python 3.11+
-- PySide6
-- Mosquitto binary (installed via Homebrew or built from source)
-
-## Running (development)
-
-```bash
-cd src
-python -m cc_mosquitto
-```
+ChromaChecker has not modified the Mosquitto source code. The complete
+source is available at https://github.com/eclipse-mosquitto/mosquitto
+(tag v2.1.2).
 
 ## License
 
-- Mosquitto broker: EPL-2.0 (Eclipse Public License 2.0)
-- GUI wrapper: Proprietary (ChromaChecker)
-
-See `LICENSE_EPL2.txt` and `SOURCE_CODE.txt` for details.
+- Eclipse Mosquitto: EPL-2.0 (see LICENSE_EPL2.txt)
+- CC MQTT Broker graphical user interface: proprietary,
+  © ChromaChecker Corporation

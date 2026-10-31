@@ -1,7 +1,7 @@
-CC Mosquitto includes Eclipse Mosquitto, licensed under EPL-2.0.
+CC MQTT Broker includes Eclipse Mosquitto, licensed under EPL-2.0.
 
 Source code is available at:
-https://github.com/ArtFab/cc-mosquitto
+https://github.com/ChromaChecker/cc-mqtt-broker
 
 Original Mosquitto source:
-https://github.com/eclipse/mosquitto
+https://github.com/eclipse-mosquitto/mosquitto
